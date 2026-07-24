@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="Koffee Kulture, Coffee, Matcha , Latte , Espresso , Egypt Cafe"
+    />
+    <meta name="author" content="Koffee Kulture" />
+    <meta name="description" content="Order Koffee Kulture" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body align="center">
+    <header>
+      <img src="../images/kklogo.jpeg" alt="KK Logo" width="50" height="50" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="locations.html">Locations</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+      </nav>
+    </header>
+    <article>
+      <form action="submit_order" method="GET">
+        <fieldset>
+          <legend>Your Information</legend>
+          <label for="name">Name: </label>
+          <input id="name" name="name" type="text" required />
+          <label for="phonenumber">Phone Number: </label>
+          <input id="phonenumber" name="phonenumber" type="tel" required />
+        </fieldset>
+        <fieldset>
+          <legend>Your Order</legend>
+          <label for="drink">Drink:</label>
+          <select id="drink" name="drink" type="text" required>
+            <option value="" disabled selected>Select Your Drink</option>
+            <option value="strawberrymatcha">Strawberry Matcha</option>
+            <option value="IcedAmericano">Iced Americano</option>
+            <option value="IcedSpanishLatte">Iced Spanish Latte</option>
+            <option value="IcedMatchaLatte">Iced Matcha Latte</option>
+            <option value="Espresso">Espresso</option>
+            <option value="Cortado">Cortado</option>
+            <option value="HotSpanishLatte">Hot Spanish Latte</option>
+            <option value="HotChocolate">Hot Chocolate</option>
+          </select>
+          <label for="size">Size: </label>
+          <select id="size" name="size" type="text" required>
+            <option value="" selected disabled>Select Size</option>
+            <option value="StandardSize">Standard Size</option>
+            <option value="LargeSize">Large Size</option>
+          </select>
+          <br />
+          <p>Milk Choice:</p>
+          <input type="radio" name="milktype" id="WholeMilk" checked />
+          <label for="WholeMilk">Whole</label>
+
+          <input type="radio" name="milktype" id="AlmondMilk" />
+          <label for="AlmondMilk">Almond</label>
+
+          <input type="radio" name="milktype" id="OatMilk" />
+          <label for="OatMilk">Oat</label>
+
+          <p>Optional Add-ons:</p>
+          <input type="checkbox" name="addons" id="extrashot" />
+          <label for="extrashot">Extra Shot</label>
+
+          <input type="checkbox" name="addons" id="vanillasyrup" />
+          <label for="vanillasyrup">Vanilla Syrup</label>
+
+          <input type="checkbox" name="addons" id="WhippedCream" />
+          <label for="WhippedCream">Whipped Cream</label>
+
+          <br />
+          <br />
+          <label for="specialrequests">Special Requests:</label>
+          <textarea id="specialrequests" name="specialrequests"></textarea>
+        </fieldset>
+        <br />
+        <button type="submit">Submit Order</button>
+        <br /><br /><br />
+      </form>
+    </article>
+    <footer>
+      <img
+        src="../images/kklogo2.jpeg"
+        alt="KK logo"
+        width="50"
+        height="50"
+      />
+      <p>© 2026, Koffee Kulture Developed by Omar</p>
+    </footer>
+  </body>
+</html>

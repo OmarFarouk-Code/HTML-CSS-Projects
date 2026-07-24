@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Mövenpick Hotel - Home</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Hotel booking system made exculsively for the Mövenpick Customers"
+    />
+    <meta
+      name="keywords"
+      content="Booking,Reservation,Rooms,Hotel,Stay,Pool,Open Buffet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mövenpick" />
+  </head>
+  <body>
+    <header align="center">
+      <h1>Mövenpick Hotel Booking System</h1>
+      <nav>
+        <a href="index.html">Home</a> | <a href="Rooms.html">Rooms</a> |
+        <a href="contactus.html">Contact Us</a>
+      </nav>
+    </header>
+    <section>
+      <h2>Get in Touch</h2>
+      <p>Have questions about your stay? Reach out to our front desk team.</p>
+
+      <address>
+        <strong>Mövenpick Hotel</strong><br />
+        Cairo-Suez Road, New Cairo<br />
+        Cairo Governorate, Egypt<br />
+        <br />
+        Email:
+        <a href="mailto:reservations.cairo@movenpick.com"
+          >reservations.cairo@movenpick.com</a
+        ><br />
+        Phone: <a href="tel:+20223456789">+20 2 2345 6789</a>
+      </address>
+    </section>
+
+    <section>
+      <h2>Send Us a Message</h2>
+      <form action="contactus.java" method="GET">
+        <fieldset>
+          <legend>Contact Form</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required />
+          <br /><br />
+          <label for="email">Email Address:</label>
+          <input id="email" name="email" type="email" required />
+          <br /><br />
+          <label for="subject">Subject:</label>
+          <select id="subject" name="subject">
+            <option value="general">General Inquiry</option>
+            <option value="booking">Booking Assistance</option>
+            <option value="cancellation">Cancellation</option>
+            <option value="feedback">Feedback</option>
+          </select>
+          <br /><br />
+          <label for="message">Message:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="50"
+            required
+            placeholder="How can we help you today?"
+          ></textarea>
+          <br /><br />
+
+          <button type="submit">Send Message</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <footer>
+      <br />
+      <br />
+      <img src="Images/Mövenpick_Logo.svg.png" width="100" />
+    </footer>
+  </body>
+</html>

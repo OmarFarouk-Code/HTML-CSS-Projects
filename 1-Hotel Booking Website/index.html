@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Mövenpick Hotel - Home</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Hotel booking system made exculsively for the Mövenpick Customers"
+    />
+    <meta
+      name="keywords"
+      content="Booking,Reservation,Rooms,Hotel,Stay,Pool,Open Buffet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mövenpick" />
+  </head>
+  <body>
+    <header align="center">
+      <h1>Mövenpick Hotel Booking System</h1>
+      <nav>
+        <a href="index.html">Home</a> | <a href="Rooms.html">Rooms</a> |
+        <a href="contactus.html">Contact Us</a>
+      </nav>
+    </header>
+    <article align="center">
+      <section>
+        <h3>Indulgence done right at Mövenpick Hotels & Resorts</h3>
+        <p>
+          Taste the good life at Mövenpick Hotels & Resorts, where every moment
+          is designed to be savoured and every stay is full of possibilities to
+          relish.
+        </p>
+        <img src="Images/aerial-view.jpg" width="400" height="200" />
+      </section>
+      <form action="results.html" method="GET">
+        <fieldset>
+          <legend>Find a Room</legend>
+          <label for="check-in">Check-in:</label>
+          <input id="check-in" type="date" name="check-in" required />
+
+          <label for="check-out">Check-out:</label>
+          <input id="check-out" type="date" name="check-out" required />
+
+          <br />
+          <br />
+          <label for="no_guests">No of Guests:</label>
+          <input
+            id="no_guests"
+            name="no_guests"
+            type="number"
+            min="1"
+            max="20"
+            required
+          />
+
+          <label for="room_pref">Room Preferences:</label>
+          <select id="room_pref" name="room_pref" type="text" required>
+            <option value="">Choose Preference</option>
+            <option value="Any">Any</option>
+            <option value="Sea-View">Sea View</option>
+            <option value="Garden-View">Garden View</option>
+            <option value="AquaPark-View">AquaPark View</option>
+          </select>
+        </fieldset>
+        <button type="submit">Submit Search</button>
+        <button type="reset">Reset</button>
+      </form>
+      <section>
+        <h3>OUR DELICIOUS DESTINATIONS</h3>
+        <p>
+          From mint-cool climes with swirls of snow to toasty terrains with your
+          own slice of beach, our hotel locations are good enough to eat
+        </p>
+
+        <img src="Images/gouna.jpeg" width="200" height="100" />
+        <img src="Images/somabay.jpeg" width="200" height="100" />
+        <img src="Images/sharm.jpeg" width="200" height="100" />
+      </section>
+    </article>
+    <footer>
+      <br />
+      <br />
+      <img src="Images/Mövenpick_Logo.svg.png" width="100" />
+    </footer>
+  </body>
+</html>
