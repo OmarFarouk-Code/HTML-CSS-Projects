@@ -13,105 +13,110 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Mövenpick" />
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <header align="center">
-      <h1>Mövenpick Hotel Booking System</h1>
-      <nav>
-        <a href="index.html">Home</a> | <a href="Rooms.html">Rooms</a> |
-        <a href="contactus.html">Contact Us</a>
-      </nav>
-    </header>
-    <br />
-    <article align="center">
-      <form action="success.html" method="GET">
-        <fieldset>
-          <legend>Room Confirmation</legend>
+    <div class="container">
+      <header class="main-header">
+        <h1 class="hotel-name">Mövenpick Hotel Booking System</h1>
+        <nav>
+          <a href="index.html">Home</a> | <a href="Rooms.html">Rooms</a> |
+          <a href="contactus.html">Contact Us</a>
+        </nav>
+      </header>
+      <article">
+        <form class="form-container" action="success.html" method="GET">
+          <fieldset class="form-title">
+            <legend>Room Confirmation</legend>
 
-          <label for="room-selection">Selected Room:</label>
-          <select id="room-selection" name="room-selection" required>
-            <option value="" disabled selected>
-              Please confirm your room...
-            </option>
-            <option value="seaview-queen">
-              Sea View Queen Bed Room - 3000 EGP/night
-            </option>
-            <option value="seaview-suite">
-              Sea View Honeymoon Suite - 5000 EGP/night
-            </option>
-            <option value="seaview-double">
-              Sea View Double Bed - 3000 EGP/night
-            </option>
-          </select>
-        </fieldset>
+            <label for="room-selection">Selected Room:</label>
+            <select class="form-input" id="room-selection" name="room-selection" required>
+              <option value="" disabled selected>
+                Please confirm your room...
+              </option>
+              <option value="seaview-queen">
+                Sea View Queen Bed Room - 3000 EGP/night
+              </option>
+              <option value="seaview-suite">
+                Sea View Honeymoon Suite - 5000 EGP/night
+              </option>
+              <option value="seaview-double">
+                Sea View Double Bed - 3000 EGP/night
+              </option>
+            </select>
+          </fieldset>
+          <br />
+          <fieldset class="form-title">
+            <legend>Guest Information</legend>
+
+            <label for="firstname">First Name:</label>
+            <input  class="form-input"id="firstname" name="firstName" type="text" required />
+
+            <label for="lastname">Last Name:</label>
+            <input class="form-input" id="lastname" name="lastName" type="text" required />
+
+            <br />
+            <br />
+            <label for="email">Email:</label>
+            <input
+            class="form-input"
+              id="email"
+              name="email"
+              type="text"
+              required
+              placeholder="example@gmail.com"
+            />
+
+            <label for="tel">Telephone No:</label>
+            <input class="form-input" id="tel" name="tel" type="number" required />
+          </fieldset>
+          <fieldset class="form-title">
+            <legend>Payment Information</legend>
+
+            <input  class="form-input" type="radio" id="credit" name="paymethod" checked required />
+            <label for="debit">Credit Card</label>
+
+            <input class="form-input" type="radio" id="dedit" name="paymethod" required />
+            <label for="debit">Debit Card</label>
+
+            <br /><br />
+            <label for="cardno">Card Number:</label>
+            <input
+            class="form-input"
+              id="cardno"
+              name="cardno"
+              type="text"
+              required
+              pattern="[0-9]{13,19}"
+            />
+
+            <label for="cvv">CVV:</label>
+            <input
+            class="form-input"
+              id="cvv"
+              name="cvv"
+              type="password"
+              required
+              maxlength="3"
+              minlength="3"
+            />
+          </fieldset>
+          <fieldset class="form-title">
+            <legend>Special Requests</legend>
+            <textarea  class="form-input"id="specialrequests"></textarea>
+          </fieldset>
+
+          <button class="submit-btn" action="submit">Complete Payment</button>
+          <button class="reset-btn" type="reset">Cancel Payment</button>
+        </form>
         <br />
-        <fieldset>
-          <legend>Guest Information</legend>
-
-          <label for="firstname">First Name:</label>
-          <input id="firstname" name="firstName" type="text" required />
-
-          <label for="lastname">Last Name:</label>
-          <input id="lastname" name="lastName" type="text" required />
-
-          <br />
-          <br />
-          <label for="email">Email:</label>
-          <input
-            id="email"
-            name="email"
-            type="text"
-            required
-            placeholder="example@gmail.com"
-          />
-
-          <label for="tel">Telephone No:</label>
-          <input id="tel" name="tel" type="number" required />
-        </fieldset>
-        <fieldset>
-          <legend>Payment Information</legend>
-
-          <input type="radio" id="credit" name="paymethod" checked required />
-          <label for="debit">Credit Card</label>
-
-          <input type="radio" id="dedit" name="paymethod" required />
-          <label for="debit">Debit Card</label>
-
-          <br /><br />
-          <label for="cardno">Card Number:</label>
-          <input
-            id="cardno"
-            name="cardno"
-            type="text"
-            required
-            pattern="[0-9]{13,19}"
-          />
-
-          <label for="cvv">CVV:</label>
-          <input
-            id="cvv"
-            name="cvv"
-            type="password"
-            required
-            maxlength="3"
-            minlength="3"
-          />
-        </fieldset>
-        <fieldset>
-          <legend>Special Requests</legend>
-          <textarea id="specialrequests"></textarea>
-        </fieldset>
-
-        <button type="submit">Complete Payment</button>
-        <button type="reset">Cancel Payment</button>
-      </form>
-      <br />
-      <a href="results.html">Go Back</a>
-    </article>
-    <footer>
-      <br />
-      <br />
-      <img src="Images/Mövenpick_Logo.svg.png" width="100" />
-    </footer>
+        <a href="results.html">Go Back</a>
+      </article>
+      <footer class="hotel-footer">
+        <br />
+        <br />
+        <img src="Images/Mövenpick_Logo.svg.png" width="100" />
+      </footer>
+    </div>
   </body>
 </html>

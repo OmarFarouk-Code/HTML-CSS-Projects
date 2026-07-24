@@ -13,150 +13,163 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Mövenpick" />
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <header align="center">
-      <h1>Mövenpick Hotel Booking System</h1>
-      <nav>
-        <a href="index.html">Home</a> | <a href="Rooms.html">Rooms</a> |
-        <a href="contactus.html">Contact Us</a>
-      </nav>
-    </header>
-    <article>
-      <table border="1" cellspacing="0" cellpadding="10" align="center">
-        <caption>
-          List of rooms that are available and match your preferences
-        </caption>
-        <thead>
-          <tr>
-            <th>Room Photo</th>
-            <th>Room Type</th>
-            <th>Capacity</th>
-            <th>Amenities</th>
-            <th>Price Per Night</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <img src="Images/seaviewroom.jpeg" width="150" height="100" />
-            </td>
-            <td>Sea View Queen Bed Room</td>
-            <td>2 People</td>
-            <td>
-              <ul>
-                <li>WiFi</li>
-                <li>TV</li>
-                <li>Mini Fridge</li>
-                <li>Balcony</li>
-                <li>Couch</li>
-              </ul>
-            </td>
-            <td>3000 EGP</td>
-          </tr>
-          <tr>
-            <td>
-              <img src="Images/sea view suite.jpeg" width="150" height="100" />
-            </td>
-            <td>Sea View Honeymoon Suite</td>
-            <td>2 People</td>
-            <td>
-              <ul>
-                <li>WiFi</li>
-                <li>TV</li>
-                <li>Mini Fridge</li>
-                <li>Balcony</li>
-                <li>Couch</li>
-              </ul>
-            </td>
-            <td>5000 EGP</td>
-          </tr>
-          <tr>
-            <td>
-              <img src="Images/doublebed.jpeg" width="150" height="100" />
-            </td>
-            <td>Sea View Double Bed</td>
-            <td>2 People</td>
-            <td>
-              <ul>
-                <li>WiFi</li>
-                <li>TV</li>
-                <li>Mini Fridge</li>
-                <li>Balcony</li>
-                <li>Couch</li>
-              </ul>
-            </td>
-            <td>3000 EGP</td>
-          </tr>
-          <tr>
-            <td>
-              <img src="Images/garden-chalet.jpg" width="150" height="100" />
-            </td>
-            <td>Garden View Chalet</td>
-            <td>5 People</td>
-            <td>
-              <ul>
-                <li>WiFi</li>
-                <li>TV</li>
-                <li>Mini Fridge</li>
-                <li>Balcony</li>
-                <li>Couch</li>
-              </ul>
-            </td>
-            <td>7000 EGP</td>
-          </tr>
-          <tr>
-            <td>
-              <img src="Images/garden-kingbed.jpeg" width="150" height="100" />
-            </td>
-            <td>Garden View King Bed</td>
-            <td>2 People</td>
-            <td>
-              <ul>
-                <li>WiFi</li>
-                <li>TV</li>
-                <li>Mini Fridge</li>
-                <li>Balcony</li>
-                <li>Couch</li>
-              </ul>
-            </td>
-            <td>2500 EGP</td>
-          </tr>
-          <tr>
-            <td>
-              <img src="Images/pool-double.jpeg" width="150" height="100" />
-            </td>
-            <td>Pool View Double Bed</td>
-            <td>2 People</td>
-            <td>
-              <ul>
-                <li>WiFi</li>
-                <li>TV</li>
-                <li>Mini Fridge</li>
-                <li>Balcony</li>
-                <li>Couch</li>
-              </ul>
-            </td>
-            <td>3500 EGP</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <td>
-            <a href="book.html">
-              <button>Book Now</button>
-            </a>
-          </td>
-          <td colspan="4">
-            We aren’t doing anything extraordinary. We are successful because we
-            simply do ordinary things in an extraordinary way.
-          </td>
-        </tfoot>
-      </table>
-    </article>
-    <footer>
-      <br />
-      <br />
-      <img src="Images/Mövenpick_Logo.svg.png" width="100" />
-    </footer>
+    <div class="container">
+      <header class="main-header">
+        <h1 class="hotel-name">Mövenpick Hotel Booking System</h1>
+        <nav>
+          <a href="index.html">Home</a> | <a href="Rooms.html">Rooms</a> |
+          <a href="contactus.html">Contact Us</a>
+        </nav>
+      </header>
+      <article>
+        <table>
+          <caption>
+            List of rooms that are available and match your preferences
+          </caption>
+          <thead>
+            <tr>
+              <th>Room Photo</th>
+              <th>Room Type</th>
+              <th>Capacity</th>
+              <th>Amenities</th>
+              <th>Price Per Night</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="Images/seaviewroom.jpeg" width="150" height="100" />
+              </td>
+              <td>Sea View Queen Bed Room</td>
+              <td>2 People</td>
+              <td>
+                <ul>
+                  <li>WiFi</li>
+                  <li>TV</li>
+                  <li>Mini Fridge</li>
+                  <li>Balcony</li>
+                  <li>Couch</li>
+                </ul>
+              </td>
+              <td>3000 EGP</td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="Images/sea view suite.jpeg"
+                  width="150"
+                  height="100"
+                />
+              </td>
+              <td>Sea View Honeymoon Suite</td>
+              <td>2 People</td>
+              <td>
+                <ul>
+                  <li>WiFi</li>
+                  <li>TV</li>
+                  <li>Mini Fridge</li>
+                  <li>Balcony</li>
+                  <li>Couch</li>
+                </ul>
+              </td>
+              <td>5000 EGP</td>
+            </tr>
+            <tr>
+              <td>
+                <img src="Images/doublebed.jpeg" width="150" height="100" />
+              </td>
+              <td>Sea View Double Bed</td>
+              <td>2 People</td>
+              <td>
+                <ul>
+                  <li>WiFi</li>
+                  <li>TV</li>
+                  <li>Mini Fridge</li>
+                  <li>Balcony</li>
+                  <li>Couch</li>
+                </ul>
+              </td>
+              <td>3000 EGP</td>
+            </tr>
+            <tr>
+              <td>
+                <img src="Images/garden-chalet.jpg" width="150" height="100" />
+              </td>
+              <td>Garden View Chalet</td>
+              <td>5 People</td>
+              <td>
+                <ul>
+                  <li>WiFi</li>
+                  <li>TV</li>
+                  <li>Mini Fridge</li>
+                  <li>Balcony</li>
+                  <li>Couch</li>
+                </ul>
+              </td>
+              <td>7000 EGP</td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="Images/garden-kingbed.jpeg"
+                  width="150"
+                  height="100"
+                />
+              </td>
+              <td>Garden View King Bed</td>
+              <td>2 People</td>
+              <td>
+                <ul>
+                  <li>WiFi</li>
+                  <li>TV</li>
+                  <li>Mini Fridge</li>
+                  <li>Balcony</li>
+                  <li>Couch</li>
+                </ul>
+              </td>
+              <td>2500 EGP</td>
+            </tr>
+            <tr>
+              <td>
+                <img src="Images/pool-double.jpeg" width="150" height="100" />
+              </td>
+              <td>Pool View Double Bed</td>
+              <td>2 People</td>
+              <td>
+                <ul>
+                  <li>WiFi</li>
+                  <li>TV</li>
+                  <li>Mini Fridge</li>
+                  <li>Balcony</li>
+                  <li>Couch</li>
+                </ul>
+              </td>
+              <td>3500 EGP</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>
+                <a href="book.html">
+                  <button>Book Now</button>
+                </a>
+              </td>
+              <td colspan="4">
+                We aren’t doing anything extraordinary. We are successful
+                because we simply do ordinary things in an extraordinary way.
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+      <footer class="hotel-footer">
+        <br />
+        <br />
+        <img src="Images/Mövenpick_Logo.svg.png" width="100" />
+      </footer>
+    </div>
   </body>
 </html>
