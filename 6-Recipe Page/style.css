@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "YoungSerif";
+  src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 50px 0px;
+}
+
+.recipe-header {
+  margin-bottom: 30px;
+}
+
+.omelette-image {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.recipe-title {
+  font-family: "YoungSerif";
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: hsl(24, 5%, 18%);
+  font-size: 30px;
+}
+
+.recipe-description {
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+}
+
+.recipe-prep-time {
+  margin-bottom: 30px;
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.recipe-prep-time li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+h3 {
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+aside ul {
+  padding-left: 30px;
+}
+
+li {
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.recipe-ingredients,
+.recipe-instructions {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+section h2 {
+  font-family: "YoungSerif";
+  font-weight: normal;
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+section ul {
+  font-family: "Outfit";
+  margin-left: 25px;
+  color: hsl(30, 10%, 34%);
+}
+
+section ol {
+  font-family: "Outfit";
+  margin-left: 15px;
+  color: hsl(30, 10%, 34%);
+}
+
+li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+.recipe-nutrition {
+  margin-bottom: 10px;
+}
+
+section p {
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 15px;
+}
+
+.nutrition-table {
+  margin-left: 10px;
+  width: 100%;
+  font-family: "Outfit";
+  border-collapse: collapse;
+}
+
+.table-row {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.nutrition-label {
+  padding: 12px 10px;
+  color: hsl(30, 10%, 34%);
+}
+
+.nutrition-value {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+  align-items: left;
+  padding: 12px 10px;
+}
