@@ -74,4 +74,5 @@ In future projects, I want to continue focusing on:
 - Usage: Used for step-by-step mentoring, conceptual guidance on CSS box model/Flexbox, debugging layout shifts, and organizing project files.
 - Takeaway: Working with AI step-by-step helped reinforce the "why" behind CSS properties rather than just copying code.
 ## Author
- 
+
+- GitHub - [Omar Farouk](https://github.com/OmarFarouk-Code)
