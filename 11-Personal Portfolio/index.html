@@ -14,6 +14,9 @@
   </head>
   <body>
     <div class="container">
+      <video class="video-loop" autoplay loop muted>
+        <source src="assets/other/video-loop.mp4" type="video/mp4" />
+      </video>
       <div class="header">
         <nav class="navigation">
           <ul class="navigation__list">
@@ -37,7 +40,7 @@
         </div>
       </div>
 
-      <section id="bio" class="bio section ">
+      <section id="bio" class="bio section">
         <div class="bio__data">
           <h1 class="bio__heading">
             Hi There, I'm a Passionate Software Engineer
@@ -106,6 +109,110 @@
             <span class="skills__years">2 Months</span>
           </li>
         </ul>
+      </section>
+
+      <section id="media" class="media section">
+        <video
+          class="media__video"
+          poster="assets/images/thumbnail.png"
+          controls
+        >
+          <source src="assets/other/video-me.mp4" type="video/mp4" />
+          Your Browser Doesnt Support the Video Tag
+        </video>
+      </section>
+
+      <section id="projects" class="projects section">
+        <h2 class="h2-heading">
+          MY FEATURED <br />
+          PROJECTS
+        </h2>
+        <div class="projects__main">
+          <img
+            class="projects__img"
+            src="assets/images/project-1.png"
+            alt="Hotel Management System Picture"
+          />
+          <div class="projects__data">
+            <h3 class="h3-heading">Hotel Management System</h3>
+            <p class="projects__description">
+              A JavaFX desktop application that streamlines hospitality
+              operations using a robust four-tier OOP architecture. It ensures
+              efficiency and data integrity through real-time availability
+              tracking, automated financial systems, and distinct role-based
+              portals for Admins, Receptionists, and Guests.
+            </p>
+            <a
+              href="https://github.com/OmarFarouk-Code/Hotel_Reservation_System"
+              class="projects__link"
+              target="_blank"
+              >Project Repository</a
+            >
+            <span class="links-serparator"> - </span>
+            <a
+              href="https://www.youtube.com/watch?v=-Paa0m97CQ0"
+              class="projects__link"
+              target="_blank"
+              >Live Demo Video</a
+            >
+          </div>
+
+          <div class="projects__data">
+            <h3 class="h3-heading">Smart Pharmacy Management System</h3>
+            <p class="projects__description">
+              Developed by the JAMBOY Team, the Smart Pharmacy Management System
+              is a C++ console application that streamlines daily pharmacy
+              operations. It features role-based access for staff, inventory
+              management with low-stock alerts, automated billing with
+              discounts, and file-based data persistence.
+            </p>
+            <a
+              href="https://github.com/OmarFarouk-Code/smart_pharmacy_system"
+              class="projects__link"
+              target="_blank"
+              >Project Repository</a
+            >
+          </div>
+          <img
+            class="projects__img"
+            src="assets/images/project-2.png"
+            alt="Smart Pharmacy System picture"
+          />
+        </div>
+      </section>
+
+      <section id="clients" class="clients section section--with-bg">
+        <h2 class="h2-heading">WHAT PEOPLE <br />SAY ABOUT ME</h2>
+
+        <div class="clients__opinions">
+          <div class="clients__wrapper">
+            <p class="clients__opinion">
+              I had the pleasure of collaborating with Omar on a complex
+              Java-based application, and his technical skills are truly
+              impressive. He takes full ownership of his modules, consistently
+              writing clean, well-structured code. Beyond his programming
+              abilities, he is a fantastic team player who always meets
+              deadlines and brings great problem-solving energy to the group.
+            </p>
+            <p class="clients__opinion">
+              Omar is an incredibly driven and capable developer. During his
+              time building our internal task management application, he
+              demonstrated a rare ability to take a project from concept to
+              end-to-end completion. He is quick to learn new frameworks,
+              communicates his progress clearly, and always delivers
+              high-quality, user-focused solutions without needing to be
+              micromanaged.
+            </p>
+            <p class="clients__opinion">
+              One of Omar’s standout qualities is his patience and his ability
+              to explain complex technical concepts simply. Having seen him
+              teach programming to younger students, it's clear he has a natural
+              talent for mentorship and leadership. He is approachable, deeply
+              knowledgeable, and genuinely cares about helping others succeed,
+              which makes him a joy to work with in any environment.
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   </body>

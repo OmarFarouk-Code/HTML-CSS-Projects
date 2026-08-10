@@ -189,6 +189,22 @@ body {
   grid-column: 1/-1;
   margin-bottom: 8.7rem;
 }
+
+.h3-heading {
+  font-size: var(--font-size-38);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 2.5rem;
+}
+
+.video-loop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.08;
+  z-index: -1;
+}
 /* End Global */
 
 /* Bio Component */
@@ -244,7 +260,6 @@ body {
 
 .find-out-link {
   padding: 0.7rem 0;
-  background-color: var(--color-white);
   margin-inline-start: 1.4rem;
 }
 
@@ -324,3 +339,87 @@ body {
   text-shadow: 0 0 2px var(--color-green);
 }
 /* Skills End */
+
+/* Media */
+
+.media {
+  display: block;
+  text-align: center;
+  padding: 0 1rem;
+}
+.media__video {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 1rem;
+  box-shadow: 2.175px 0.71px 38px rgba(0, 0, 0, 0.15);
+}
+/* End Video */
+
+/* Projects */
+.projects__main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 7.4rem;
+  row-gap: 7.5rem;
+}
+
+.projects__data {
+  align-self: center;
+}
+.projects__img {
+  width: 100%;
+  box-shadow: 2.175px 0.71px 38px rgba(0, 0, 0, 0.15);
+}
+
+.projects__img:last-child {
+  align-self: end;
+}
+
+.projects__description {
+  line-height: 1.5;
+  margin-bottom: 2.9rem;
+}
+
+.links-serparator {
+  margin: 0 1rem;
+}
+
+.projects__link {
+  color: var(--color-darker-blue);
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-medium);
+}
+
+.projects__link::after {
+  content: "";
+  width: 1.4rem;
+  height: 1.4rem;
+  display: inline-block;
+  background-image: url("../assets/images/external-icon.png");
+  background-size: contain;
+  margin-left: 0.5rem;
+}
+/* Projects End */
+
+/* Clients */
+.clients__opinions {
+  grid-column: 1/-1;
+  font-size: var(--font-size-40);
+  line-height: 1.7;
+}
+
+.clients__wrapper {
+  display: flex;
+  overflow-x: auto;
+  gap: 5rem;
+  scroll-snap-type: x mandatory;
+}
+
+.clients__opinion {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+/* Clients End */
