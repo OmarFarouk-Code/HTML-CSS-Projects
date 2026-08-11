@@ -64,6 +64,10 @@ ol {
 }
 
 /* CSS END RESET */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 11rem;
+}
 
 body {
   font-size: 1.6rem;
@@ -80,11 +84,26 @@ body {
   padding-inline: var(--gutter);
 }
 
+.container:has(#bio:target) .navigation__bio,
+.container:has(#skills:target) .navigation__skills,
+.container:has(#media:target) .navigation__media,
+.container:has(#projects:target) .navigation__projects,
+.container:has(#clients:target) .navigation__clients,
+.container:has(#contact:target) .navigation__contact {
+  color: var(--color-blue);
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+}
+
 .header {
   padding: 3rem 0rem;
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-background);
+  z-index: 1;
 }
 .header::before {
   content: "";
@@ -94,6 +113,7 @@ body {
   border-bottom: 0.1rem solid var(--color-input-border);
   top: 0;
   z-index: -1;
+  background-color: var(--color-background);
 }
 
 .navigation__list {
@@ -482,8 +502,8 @@ body {
   margin-top: 3.4rem;
 }
 
-.form:invalid::after{
-  content:"*";
+.form:invalid::after {
+  content: "*";
   font-size: var(--font-size-38);
   color: var(--color-red);
 }
@@ -494,6 +514,17 @@ body {
   border-top: 0.1rem solid var(--color-black);
   padding: 1rem;
   line-height: 1.5;
+  font-size: var(--font-size-15);
 }
 
 /* Footer End */
+
+/* Theme */
+html:has(.toggle__checkbox:checked) {
+  --color-background: var(--color-black);
+  --color-text: var(--color-white);
+  --color-box-img: var(--color-green);
+  --color-link-bg: var(--color-green);
+  --color-grey: #080808;
+  --color-input-border: var(--color-white);
+}
