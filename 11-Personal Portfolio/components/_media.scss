@@ -1,0 +1,14 @@
+.media {
+  display: block;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.media__video {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 1rem;
+  box-shadow: 2.175px 0.71px 38px rgba(0, 0, 0, 0.15);
+}
