@@ -18,13 +18,12 @@
         <source src="assets/other/video-loop.mp4" type="video/mp4" />
       </video>
       <div class="header">
-
         <label for="menu" class="burger-menu">
           <div class="burger-menu__bar"></div>
           <div class="burger-menu__bar"></div>
           <div class="burger-menu__bar"></div>
         </label>
-        <input id="menu" class="burger-menu__checkbox" type="checkbox">
+        <input id="menu" class="burger-menu__checkbox" type="checkbox" />
 
         <nav class="navigation">
           <ul class="navigation__list">
@@ -59,8 +58,6 @@
           </ul>
         </nav>
 
-
-
         <div class="toggle">
           <h3 class="toggle__title">Switch Theme</h3>
           <input
@@ -69,7 +66,7 @@
             id="toggle"
             class="toggle__checkbox"
           />
-          <label for="toggle" class="toggle__label"></label>
+          <label for="toggle" class="toggle__label" role="button" tabindex="0"></label>
         </div>
       </div>
 
@@ -326,5 +323,6 @@
 
       <footer class="footer">© 2026 by Omar Farouk</footer>
     </div>
+    <script src="scripts/prevent-default.js"></script>
   </body>
 </html>
