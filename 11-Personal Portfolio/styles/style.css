@@ -356,6 +356,26 @@ body {
   margin-top: 1 rem;
 }
 
+.skills__filter {
+  grid-column: 1/-1;
+  margin-top: -8rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skills__button {
+  border: 1px solid var(--color-text);
+  border-radius: 0.4rem;
+  padding: 0.2rem 1rem;
+  font-size: var(--font-size-20);
+}
+
+.skills__button--active {
+  background-color: var(--color-text);
+  color: var(--color-background);
+}
+
 .skills__item {
   transition: var(--transition-timing);
   -webkit-user-select: none;
