@@ -1,14 +1,14 @@
-// LEARNING JS OOP
+// // LEARNING JS OOP
 
-function Person(name, age) {
-  this.name = name;
-  this.age = age;
-}
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
 
-Person.prototype.login = function () {
-  console.log("You have successfully logged In!");
-};
+// Person.prototype.login = function () {
+//   console.log("You have successfully logged In!");
+// };
 
-const employee1 = new Person("Omar", 19);
-console.log(employee1);
-employee1.login();
+// const employee1 = new Person("Omar", 19);
+// console.log(employee1);
+// employee1.login();
